@@ -5,7 +5,9 @@ Paulo Jerônimo <paulojeronimo@gmail.com>; {localdatetime}
 
 ifdef::env-github[]
 :uri-published-html: https://paulojeronimo.github.io/apache-nifi-tutorial/index.html
-:uri-asciidoc: https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/
+:uri-asciidoctor: https://asciidoctor.org
+:uri-asciidoctor-pdf: {uri-asciidoctor}/docs/asciidoctor-pdf/
+:uri-asciidoc: {uri-asciidoctor}/docs/asciidoc-syntax-quick-reference/
 :uri-vim: https://www.vim.org
 :uri-gradle: https://gradle.com
 :vim: {uri-vim}[Vim]
@@ -27,7 +29,7 @@ You can use any editor to write this document (I use {Vim}). A good and https://
 If you are like me (likes to use Vim to edit your files and build it with {Gradle}) you can also check how to use the https://github.com/asciidoctor/asciidoctor-gradle-examples/tree/master/asciidoc-to-html-livereload-example[live reload support].
 
 [[build-this-document]]
-== Building HTML and PDF formats
+== Building HTML and PDF documents using Gradle
 
 Type:
 
@@ -54,3 +56,35 @@ On another shell, type this:
 ----
 
 Do your editions and note that the browser will automatically reflect the changes.
+
+== Building HTML and PDF documents using Bash
+
+=== Prerequisites
+
+. A Bash shell (obvious)
+. {uri-asciidoctor}[Asciidoctor] installed
+. {uri-asciidoctor-pdf}[Asciidoctor PDF] installed
+
+=== HTML generation
+
+----
+./build.sh
+----
+
+=== PDF generation
+
+----
+./build.sh pdf
+----
+
+=== README.html generation
+
+----
+./build.sh README
+----
+
+=== GitHub Pages publication of HTML and PDF (both must be generated first)
+
+----
+./build.sh publish
+----

@@ -1,0 +1,7 @@
+# vi: set ft=sh:
+build_dir=build
+html_dir=$build_dir/asciidoc/html5
+pdf_dir=$build_dir/asciidoc/pdf
+pdf_name=apache-nifi-tutorial.pdf
+doc=src/docs/asciidoc/index.adoc
+asciidoctor_attrs="-a projectdir=$BASE_DIR"

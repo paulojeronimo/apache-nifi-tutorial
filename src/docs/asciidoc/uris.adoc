@@ -1,10 +1,12 @@
 // URIs
 
 // Tools
+:uri-asciidoctor: https://asciidoctor.org
+:uri-asciidoc: {uri-asciidoctor}/docs/asciidoc-syntax-quick-reference/
+:uri-asciidoctor-pdf: {uri-asciidoctor}/docs/asciidoctor-pdf/
 :uri-vim: https://www.vim.org
 :uri-gradle: https://gradle.com
 :uri-github-pages: https://pages.github.com
-:uri-asciidoc: https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/
 :uri-docker: https://www.docker.com/
 :uri-docker-compose: https://docs.docker.com/compose/
 :uri-kafka: https://kafka.apache.org/
