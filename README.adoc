@@ -1,0 +1,56 @@
+= My steps to learn about Apache NiFi
+Paulo Jerônimo <paulojeronimo@gmail.com>; {localdatetime}
+:toc:
+:icons: font
+
+ifdef::env-github[]
+:uri-published-html: https://paulojeronimo.github.io/apache-nifi-tutorial/index.html
+:uri-asciidoc: https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/
+:uri-vim: https://www.vim.org
+:uri-gradle: https://gradle.com
+:vim: {uri-vim}[Vim]
+:gradle: {uri-gradle}[Gradle]
+:asciidoc: {uri-asciidoc}[AsciiDoc]
+endif::[]
+ifndef::env-github[]
+include::src/docs/asciidoc/uris.adoc[]
+include::src/docs/asciidoc/definitions.adoc[]
+endif::[]
+
+This is the source code of the document {uri-published-html}["{doctitle}"] written in {Asciidoc} format.
+
+[[editing]]
+== Editing
+
+You can use any editor to write this document (I use {Vim}). A good and https://en.wikipedia.org/wiki/WYSIWYG[WYSIWYG] alternative is https://www.asciidocfx.com/[AsciidocFX]. Other alternatives can be found in the page https://asciidoctor.org/docs/editing-asciidoc-with-live-preview/["Editing AsciiDoc with Live Preview"].
+
+If you are like me (likes to use Vim to edit your files and build it with {Gradle}) you can also check how to use the https://github.com/asciidoctor/asciidoctor-gradle-examples/tree/master/asciidoc-to-html-livereload-example[live reload support].
+
+[[build-this-document]]
+== Building HTML and PDF formats
+
+Type:
+
+----
+./gradlew asciidoctor
+----
+
+This will use the link:build.gradle[] file which is configured using https://github.com/asciidoctor/asciidoctor-gradle-plugin[asciidoctor-gradle-plugin].
+
+=== Using Gradle with LiveReload
+
+Install and enable LiveReload plugin on https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en[Chrome] (or http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-[Firefox]).
+
+Run this command:
+
+----
+./gradlew -t asciidoctor
+----
+
+On another shell, type this:
+
+----
+./gradlew liveReload
+----
+
+Do your editions and note that the browser will automatically reflect the changes.

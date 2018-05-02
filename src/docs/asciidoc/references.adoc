@@ -1,0 +1,57 @@
+= All references
+
+Apache NiFi::
+GitHub:::
+* https://github.com/apache/nifi[apache/nifi]
+* https://github.com/apache/nifi/tree/master/nifi-docker/dockerhub[nifi-docker/dockerhub]
+Documentation:::
+* https://nifi.apache.org/docs/nifi-docs/html/user-guide.html[Apache NiFi User Guide]
+* https://nifi.apache.org/developer-guide.html[NiFi Developer’s Guide]
+* https://nifi.apache.org/docs/nifi-docs/html/nifi-in-depth.html[Apache NiFi In Depth]
+Other::
+YouTube videos:::
+* [[yA]] yA: https://www.youtube.com/watch?v=GGoQ39CCcVs[{yA-title}]
+* [[yB]] yB: https://www.youtube.com/watch?v=F98NLule18I[{yB-title}]
+* [[yC]] yC: https://www.youtube.com/watch?v=fO-xOrWBZJU[{yC-title}]
+* [[yD]] yD: https://www.youtube.com/watch?v=FgTGAWLC170[{yD-title}]
+* [[yE]] yE: https://www.youtube.com/watch?v=bzqP-Loyq-Y[{yE-title}]
+* [[yF]] yF: https://www.youtube.com/watch?v=YVMUnfjMGVk[{yF-title}]
+* https://www.silvercloudcomputing.com/videos.html[Videos page at Silver Cloud Computing]
+GitHub:::
+* https://github.com/hortonworks-gallery/nifi-templates[hortonworks-gallery/nifi-templates]
+* https://github.com/dstreev/nifi-processor-examples[ndstreev/nifi-processor-examples]
+* https://github.com/aperepel/nifi-api-deploy[aperepel/nifi-api-deploy]
+Community Forums/Meetups:::
+* http://apache-nifi.1125220.n5.nabble.com/
+* https://community.hortonworks.com/topics/Nifi.html
+Stack Overflow:::
+* https://stackoverflow.com/questions/42311176/automating-nifi-template-deployment[automating NIFI template deployment]
+Books:::
+* https://goo.gl/7KGANn[NiFi Fundamentals & Cookbook: 9-Use cases, covering various scenarios]
+Articles/ examples:::
+* Getting Started
+** http://www.nifi.rocks/getting-started-with-apache-nifi/[Getting Started with Apache Nifi]
+** http://www.contemplatingdata.com/2017/08/14/apache-nifi-introduction/[Apache NiFi: An Introduction]
+** https://www.silvercloudcomputing.com/nifi.html[NiFi page at Silver Cloud Computing]
+** https://medium.com/@suci/hello-world-nifi-dcafcba0fdb0[Hello-World in Apache NiFi]
+** https://zdatainc.com/2016/02/hello-nifi-data-orchestration-using-hortonworks-dataflow-hdf/[Hello NiFi! – Data Orchestration using Hortonworks DataFlow (HDF)]
+* Developing custom processors
+** http://www.nifi.rocks/developing-a-custom-apache-nifi-processor-json/[Developing A Custom Apache Nifi Processor (JSON)]
+** https://community.hortonworks.com/articles/116803/building-a-custom-processor-in-apache-nifi-12-for.html[Building a Custom Processor in Apache NiFi 1.5 for TensorFlow Using the Java API]
+* Automation/ Deployment
+** https://bryanbende.com/development/2018/01/19/apache-nifi-how-do-i-deploy-my-flow[Apache NiFi - How do I deploy my flow?]
+** https://pierrevillard.com/2018/04/09/automate-workflow-deployment-in-apache-nifi-with-the-nifi-registry/[Automate workflow deployment in Apache NiFi with the NiFi Registry]
+* Best Practices/ Use cases
+** https://medium.com/@abdelkrim.hadjidj/best-practices-for-using-apache-nifi-in-real-world-projects-3-takeaways-1fe6912101db[Best practices for using Apache NiFi in real world projects - 3 takeaways]
+** https://www.slideshare.net/Hadoop_Summit/best-practices-and-lessons-learnt-from-running-apache-nifi-at-renault[Best practices and lessons learnt from Running Apache NiFi at Renault]
+* Architecture
+** http://moi.vonos.net/bigdata/nifi/[Apache Nifi Architecture]
+* Events/ Meetups
+** https://www.meetup.com/en-AU/Hadoop-User-Group-Vienna/events/248266228/
+** https://dataworkssummit.com/blog/cloud-operations-with-streaming-analytics-using-apache-nifi-and-apache-flink/[Cloud Operations with Streaming Analytics using Apache Nifi and Apache Flink]
+* Spring with Apache NiFi:
+** https://content.pivotal.io/slideshare-all-slideshows-2/spring-with-apachenifi[Spring with ApacheNiFi]
+* Pivotal Cloud Foundry integration:
+** https://github.com/pivotal-cf/docs-spring-xd/issues/1[Apache NIFI as a PCF service]
+* Comparison with other tools:
+** https://www.quora.com/What-are-the-main-differences-between-Spring-Cloud-Data-Flow-and-Apache-Nifi[What are the main differences between Spring Cloud Data Flow and Apache Nifi?]

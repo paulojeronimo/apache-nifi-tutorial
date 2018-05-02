@@ -1,0 +1,9 @@
+[[videos]]
+= Videos with a technical background
+
+Prior to starting my own labs, I saw some introductory videos (available on YouTube):
+
+* {yA}
+* {yB}
+* {yC}
+* {yD}

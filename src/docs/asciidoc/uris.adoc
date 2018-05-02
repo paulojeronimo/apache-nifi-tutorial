@@ -1,0 +1,34 @@
+// URIs
+
+// Tools
+:uri-vim: https://www.vim.org
+:uri-gradle: https://gradle.com
+:uri-github-pages: https://pages.github.com
+:uri-asciidoc: https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/
+:uri-docker: https://www.docker.com/
+:uri-docker-compose: https://docs.docker.com/compose/
+:uri-kafka: https://kafka.apache.org/
+:uri-zookeeper: https://zookeeper.apache.org/
+:uri-mysql: https://www.mysql.com/
+:uri-rabbitmq: https://www.rabbitmq.com/
+:uri-redis: https://redis.io/
+:uri-sdkman: http://sdkman.io/
+:uri-maven: https://maven.apache.org
+:uri-virtualbox: https://www.virtualbox.org/
+
+// Apache NiFI
+:uri-apache-nifi: https://nifi.apache.org/
+
+// This document
+// Source code
+:uri-paulojeronimo-github: https://github.com/paulojeronimo
+:uri-source-code: {uri-paulojeronimo-github}/apache-nifi-tutorial
+:uri-readme: {uri-source-code}/blob/master/README.adoc
+// Published versions
+:uri-published: https://paulojeronimo.github.io/apache-nifi-tutorial
+:uri-published-html: {uri-published}/index.html
+:uri-published-pdf: {uri-published}/apache-nifi-tutorial.pdf
+// Generated versions
+:uri-generated: .
+:uri-generated-html: {uri-generated}/index.html
+:uri-generated-pdf: {uri-generated}/apache-nifi-tutorial.pdf

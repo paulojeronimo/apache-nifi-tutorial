@@ -1,0 +1,35 @@
+buildscript {
+  repositories {
+    mavenLocal()
+    jcenter()
+  }
+  dependencies {
+    classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.7'
+    classpath 'org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.15'
+  }
+}
+
+plugins {
+  id 'org.asciidoctor.convert' version '1.5.7'
+  id 'org.kordamp.gradle.livereload' version '0.2.1'
+}
+
+apply plugin: 'org.asciidoctor.convert'
+apply plugin: 'org.kordamp.gradle.livereload'
+
+asciidoctorj {
+    version = '1.5.6'
+}
+
+asciidoctor {
+  backends 'html5', 'pdf'
+  sources {
+    include 'index.adoc'
+  }
+  attributes \
+    'source-highlighter': 'coderay'
+}
+
+liveReload {
+    docRoot asciidoctor.outputDir.canonicalPath
+}

@@ -1,0 +1,43 @@
+// Definitions
+
+// Tools
+:vim: {uri-vim}[Vim]
+:gradle: {uri-gradle}[Gradle]
+:githubPages: {uri-github-pages}[GitHub Pages]
+:asciidoc: {uri-asciidoc}[AsciiDoc]
+:docker: {uri-docker}[Docker]
+:dockerCompose: {uri-docker-compose}[Docker Compose]
+:kafka: {uri-kafka}[Kafka]
+:zookeeper: {uri-zookeeper}[Zookeeper]
+:mysql: {uri-mysql}[MySQL]
+:rabbitmq: {uri-rabbitmq}[RabbitMQ]
+:redis: {uri-redis}[Redis]
+:maven: {uri-maven}[Maven]
+:sdkman: {uri-sdkman}[SDKMAN]
+:virtualbox: {uri-virtualbox}[VirtualBox]
+
+// Apache NiFi
+:apache-nifi: {uri-apache-nifi}[Apache NiFi]
+
+// Labs titles
+:lab1-title: Running Apache NiFi inside a Docker container
+:lab2-title: Running Apache NiFi locally
+:lab3-title: Building a simple Data Flow
+:lab4-title: Developing a custom processor
+:lab5-title: Deploying Apache NiFi under Pivotal Cloud Foundry
+
+// YouTube videos titles
+:yA-title: Matt Burgess discusses Open Source Software & Apache nifi
+:yB-title: Spring with ApacheNiFi
+:yC-title: Hortonworks DataFlow powered by Apache NiFi
+:yD-title: How to navigate and build a dataflow in Apache Nifi
+:yE-title: Apache NiFi How to Build a Flow - Part 1 (Updated)
+:yF-title: Apache NiFi How to Build a Flow - Part 2 (Updated)
+
+// Video links
+:yA: <<yA,"{yA-title}">> (yA)
+:yB: <<yB,"{yB-title}">> (yB)
+:yC: <<yC,"{yC-title}">> (yC)
+:yD: <<yD,"{yD-title}">> (yD)
+:yE: <<yE,"{yE-title}">> (yE)
+:yF: <<yF,"{yF-title}">> (yF)

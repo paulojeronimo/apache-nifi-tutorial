@@ -1,0 +1,49 @@
+[[lab1]]
+= Lab 1: {lab1-title}
+
+For me, the best way to start learning a new technology is by running all the stuff related to them inside a {docker} container.
+By this way, I can abstract myself about the related installation procedures and go directly to the point.
+
+So, In this tutorial, I present the steps to work with Apache NiFi using Docker.
+
+== Prerequisites
+
+. {Docker} installed.
+
+== Start/Restart
+
+First start:
+
+----
+docker run --name nifi -p 9090:9090 -d -e NIFI_WEB_HTTP_PORT='9090' apache/nifi:latest
+----
+
+Restart (if was started any time before with the command below and stopped):
+
+----
+docker start nifi
+----
+
+== Access to the UI
+
+Open http://localhost:9090/nifi
+
+== Status
+
+----
+$ docker ps
+CONTAINER ID        IMAGE                COMMAND                  CREATED             STATUS              PORTS                                                   NAMES
+3a506cfec5ab        apache/nifi:latest   "/bin/sh -c ${NIFI_B…"   10 hours ago        Up 10 hours         8080/tcp, 8443/tcp, 10000/tcp, 0.0.0.0:9090->9090/tcp   nifi
+----
+
+== Stop
+
+----
+docker stop nifi
+----
+
+----
+$ docker ps -a
+CONTAINER ID        IMAGE                COMMAND                  CREATED             STATUS                        PORTS               NAMES
+3a506cfec5ab        apache/nifi:latest   "/bin/sh -c ${NIFI_B…"   10 hours ago        Exited (137) 33 seconds ago                       nifi
+----

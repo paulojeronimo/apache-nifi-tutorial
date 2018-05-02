@@ -1,0 +1,27 @@
+= My steps to learn about Apache NiFi
+Paulo Jerônimo <paulojeronimo@gmail.com>;{localdatetime}
+:toc: left
+:icons: font
+:imagesdir: images
+
+include::uris.adoc[]
+include::definitions.adoc[]
+
+:leveloffset: +1
+
+<<<
+include::introduction.adoc[]
+
+<<<
+include::videos.adoc[]
+
+<<<
+include::lab1.adoc[]
+
+<<<
+include::lab2.adoc[]
+
+<<<
+include::references.adoc[]
+
+:leveloffset: -1

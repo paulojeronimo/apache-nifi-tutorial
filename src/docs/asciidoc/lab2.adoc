@@ -1,0 +1,65 @@
+[[lab2]]
+= Lab 2: {lab2-title}
+
+== Prerequisites
+
+. Java installed.
+
+== Installation
+
+----
+$ brew install nifi
+....
+######################################################################## 100.0%
+🍺  /usr/local/Cellar/nifi/1.6.0: 386 files, 1.2GB, built in 45 minutes 44 seconds
+----
+
+== Start
+
+----
+$ nifi
+Usage nifi {start|stop|run|restart|status|dump|install}
+----
+
+----
+$ nifi start
+
+Java home: /Users/pj/.sdkman/candidates/java/current
+NiFi home: /usr/local/Cellar/nifi/1.6.0/libexec
+
+Bootstrap Config File: /usr/local/Cellar/nifi/1.6.0/libexec/conf/bootstrap.conf
+----
+
+== Access to the UI
+
+Open http://localhost:8080/nifi/
+
+== Status
+
+----
+$ nifi status
+
+Java home: /Users/pj/.sdkman/candidates/java/current
+NiFi home: /usr/local/Cellar/nifi/1.6.0/libexec
+
+Bootstrap Config File: /usr/local/Cellar/nifi/1.6.0/libexec/conf/bootstrap.conf
+
+2018-04-29 08:02:13,153 INFO [main] org.apache.nifi.bootstrap.Command Apache NiFi is currently running, listening to Bootstrap on port 58129, PID=4024
+----
+
+== Stop
+
+----
+$ nifi stop
+
+Java home: /Users/pj/.sdkman/candidates/java/current
+NiFi home: /usr/local/Cellar/nifi/1.6.0/libexec
+
+Bootstrap Config File: /usr/local/Cellar/nifi/1.6.0/libexec/conf/bootstrap.conf
+
+2018-04-29 08:11:41,562 INFO [main] org.apache.nifi.bootstrap.Command Apache NiFi has accepted the Shutdown Command and is shutting down now
+2018-04-29 08:11:41,587 INFO [main] org.apache.nifi.bootstrap.Command Waiting for Apache NiFi to finish shutting down...
+2018-04-29 08:11:43,597 INFO [main] org.apache.nifi.bootstrap.Command NiFi has finished shutting down.
+----
+
+

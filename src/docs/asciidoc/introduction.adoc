@@ -1,0 +1,36 @@
+[[introduction]]
+= Introduction
+
+Recently I had work to produce a document with a comparison between two tools for Cloud Data Flow.
+I didn't have any knowledge of this kind of technology before creating this document.
+{apache-nifi} is one of the tools in my comparison document.
+So, here I describe some of my procedures to learn about it and take my own preliminary conclusions.
+I followed many steps on my own desktop (a MacBook Pro computer) to accomplish this task.
+This document shows you what I did.
+
+Basically, to learn about {apache-nifi} in order to do a comparison with other tool:
+
+* I saw some <<videos,videos>> about it.
+* I wrote my own labs:
+** <<lab1,{lab1-title}>>
+** <<lab2,{lab2-title}>>
+** {lab3-title} __(under contruction)__
+** {lab4-title} __(under contruction)__
+** {lab5-title} __(under contruction)__
+
+== About this document
+
+This document was written using {Vim} (my favorite text editor) and its {uri-source-code}[source code] is in {Asciidoc} format.
+The generated output formats (HTML and PDF) are build (and published in {GitHubPages}) with {Gradle}.
+Read more about the generation processes of this document in {uri-readme}[README.adoc].
+
+ifdef::backend-html5[]
+Download the {uri-published-pdf}[PDF version of this document].
+endif::[]
+ifdef::backend-pdf[]
+See the {uri-published-html}[online version of this document in HTML format].
+endif::[]
+
+== About me
+
+You can read more about me on http://paulojeronimo.github.io/cv/en/[my cv].
