@@ -1,0 +1,113 @@
+[[lab3]]
+= Lab 3: {lab3-title}
+
+== Prerequisites
+
+. Docker installed.
+
+== Step 1 - Create a Nifi docker container with default parameters
+
+----
+$ docker run --name nifi -p 8080:8080 -d apache/nifi
+----
+
+== Step 2 - Access the UI and create two processors
+
+Open http://localhost:8080/nifi
+
+== Step 3 - Add and configure processor 1 (GenerateFlowFile)
+
+Drag and drop a processor into canvas:
+
+image:lab3/00.png[]
+
+Search for a processor named `GenerateFlowFile`:
+
+image:lab3/01.png[]
+
+Click on `Add` and the processor will be added to the canvas:
+
+image:lab3/02.png[]
+
+Configure the processor (2 steps):
+
+Step 1 - Adjust the `Run Schedule` to `5 sec`:
+
+image:lab3/03.png[]
+
+Step 2 - Adjust the propertie `File Size` to `2KB`:
+
+image:lab3/04.png[]
+
+== Step 4 - Add and configure processor 2 (Putfile)
+
+Drag another processor into canvas. Search for `PutFile`:
+
+image:lab3/05.png[]
+
+Add it to the canvas:
+
+image:lab3/06.png[]
+
+Configure the `Directory` property to `/tmp/nifi`.
+
+image:lab3/07.png[]
+
+Configure `Automatically Terminate RelationShips` by checking the boxes `failure` and `success`.
+
+image:lab3/08.png[]
+
+== Step 5 - Connect the processors
+
+From `GenerateFile` to `Putfile`:
+
+image:lab3/09.png[]
+
+A connection will be create:
+
+image:lab3/10.png[]
+
+This will be the final state:
+
+image:lab3/11.png[]
+
+== Step 6 - Start the processors
+
+Click kbd:[Ctrl] to select both processors and start it.
+
+image:lab3/12.png[]
+
+== Step 7 - View the generated logs
+
+Open a shell inside the container:
+
+----
+$ docker exec -it nifi /bin/bash
+----
+
+Type the following command to see a list of the 9 generated files.
+This list will be actualized second by second.
+As we configure in NiFi, a new file will be generated on every 5 seconds.
+
+----
+$ while :; do clear; ls -lht /tmp/nifi/ | head -10; sleep 1; done
+----
+
+== Step 8 - Stop the processors
+
+Click kbd:[Ctrl] to select both processors and stop it.
+
+image:lab3/13.png[]
+
+== Step 9 - Stop and destroy the docker container
+
+----
+$ docker stop nifi
+$ docker rm nifi
+----
+
+== Conclusions
+
+* NiFi UI is very simple and intuitive.
+* The properties are well documented.
+* Many other aspects of the UI can be explored in {uri-nifi-youtube-playlist-a}[this playlist].

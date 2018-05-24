@@ -3,6 +3,7 @@ Paulo Jerônimo <paulojeronimo@gmail.com>;{localdatetime}
 :toc: left
 :icons: font
 :imagesdir: images
+:experimental:
 
 include::uris.adoc[]
 include::definitions.adoc[]
@@ -20,6 +21,9 @@ include::lab1.adoc[]
 
 <<<
 include::lab2.adoc[]
+
+<<<
+include::lab3.adoc[]
 
 <<<
 include::references.adoc[]

@@ -20,6 +20,7 @@
 
 // Apache NiFI
 :uri-apache-nifi: https://nifi.apache.org/
+:uri-nifi-youtube-playlist-a: https://www.youtube.com/playlist?list=PLHre9pIBAgc4e-tiq9OIXkWJX8bVXuqlG
 
 // This document
 // Source code
